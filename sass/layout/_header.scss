@@ -1,0 +1,19 @@
+.header {
+
+
+    &--background {
+        position: absolute;
+        height: 95vh;
+        width: 100%;
+        background: rgba(#111111, .70) url(/images/bg.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        filter: brightness(50%);
+        -moz-filter: brightness(50%);
+        -webkit-filter: brightness(50%);
+        z-index: -1;
+
+        clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 100%, 0% 80%);
+    }
+}

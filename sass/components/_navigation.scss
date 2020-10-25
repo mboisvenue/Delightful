@@ -1,0 +1,32 @@
+.navigation{
+    font-family: "lobster";
+    color: $color-primary;
+    align-items: center;
+    background-color: rgba(black, 0.8);
+    padding: 5px;
+    margin-left: -10rem;
+
+    &__logo img{
+    height: 7rem;
+    width: 7rem;
+    }
+
+    &__title{
+        font-size: 3.6rem;
+    }
+
+}
+
+.navigation__links{
+    font-size: 2.4rem;
+    
+    &--list{
+        list-style-type: none;
+        display: flex;
+
+        .link {
+            margin-right: 2rem;
+            cursor: pointer;
+        }
+    }
+}

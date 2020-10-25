@@ -1,0 +1,58 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'lato', sans-serif;
+  font-weight: 400;
+  line-height: 1.7rem;
+  box-sizing: border-box;
+  letter-spacing: 5px; }
+
+.navigation {
+  font-family: "lobster";
+  color: #FFBA19;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  margin-left: -10rem; }
+  .navigation__logo img {
+    height: 7rem;
+    width: 7rem; }
+  .navigation__title {
+    font-size: 3.6rem; }
+
+.navigation__links {
+  font-size: 2.4rem; }
+  .navigation__links--list {
+    list-style-type: none;
+    display: flex; }
+    .navigation__links--list .link {
+      margin-right: 2rem;
+      cursor: pointer; }
+
+.grid {
+  display: grid;
+  justify-items: center; }
+  .grid--3 {
+    grid-template-columns: 1fr 1fr 1fr; }
+
+.header--background {
+  position: absolute;
+  height: 95vh;
+  width: 100%;
+  background: rgba(17, 17, 17, 0.7) url(/images/bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  filter: brightness(50%);
+  -moz-filter: brightness(50%);
+  -webkit-filter: brightness(50%);
+  z-index: -1;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 100%, 0% 80%); }
