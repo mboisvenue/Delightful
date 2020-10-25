@@ -1,0 +1,43 @@
+.heading-section {
+    font-family: "lobster";
+    color: $color-primary;
+    height: 80rem;
+    width: 100%;
+    letter-spacing: 5px;
+
+    &__background {
+        position: absolute;
+        height: 80rem;
+        width: 100%;
+        background-image: url(/images/bg.jpg);
+        filter: brightness(30%);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        z-index: -10;
+
+        clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 100%, 0% 80%);
+    }
+
+}
+
+.about-section{
+    font-family: 'open sans';
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-align: center;
+    gap: 10%;
+    margin-bottom: 15rem;
+    padding: 0 2rem;
+    display: inline-block;
+
+    &__company {
+        width: 40rem;
+        float: left;
+    }
+    
+    &__getting-started {
+        width: 40rem;
+        float: right;
+    }
+}

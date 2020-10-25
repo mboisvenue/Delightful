@@ -12,21 +12,20 @@ body {
   font-family: 'lato', sans-serif;
   font-weight: 400;
   line-height: 1.7rem;
-  box-sizing: border-box;
-  letter-spacing: 5px; }
+  box-sizing: border-box; }
 
 .navigation {
-  font-family: "lobster";
-  color: #FFBA19;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.8);
   padding: 5px;
   margin-left: -10rem; }
   .navigation__logo img {
     height: 7rem;
-    width: 7rem; }
+    width: 7rem;
+    cursor: pointer; }
   .navigation__title {
-    font-size: 3.6rem; }
+    font-size: 3.6rem;
+    cursor: pointer; }
 
 .navigation__links {
   font-size: 2.4rem; }
@@ -37,22 +36,73 @@ body {
       margin-right: 2rem;
       cursor: pointer; }
 
+.btn {
+  font-size: 1.6rem;
+  color: #FFBA19;
+  text-decoration: none;
+  background-color: #333;
+  text-align: center;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  align-self: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25); }
+  .btn--get-started {
+    width: 16rem;
+    overflow: hidden; }
+  .btn--products {
+    width: 12rem; }
+
 .grid {
   display: grid;
   justify-items: center; }
+  .grid--2 {
+    grid-template-columns: 1fr 1fr; }
   .grid--3 {
     grid-template-columns: 1fr 1fr 1fr; }
 
-.header--background {
+.header {
   position: absolute;
-  height: 95vh;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 15rem; }
+  .header__tagline {
+    font-size: 3.6rem;
+    line-height: 4rem; }
+  .header__btns {
+    margin-top: 15rem;
+    gap: 20%; }
+
+.heading-section {
+  font-family: "lobster";
+  color: #FFBA19;
+  height: 80rem;
   width: 100%;
-  background: rgba(17, 17, 17, 0.7) url(/images/bg.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  filter: brightness(50%);
-  -moz-filter: brightness(50%);
-  -webkit-filter: brightness(50%);
-  z-index: -1;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 100%, 0% 80%); }
+  letter-spacing: 5px; }
+  .heading-section__background {
+    position: absolute;
+    height: 80rem;
+    width: 100%;
+    background-image: url(/images/bg.jpg);
+    filter: brightness(30%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: -10;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 100%, 0% 80%); }
+
+.about-section {
+  font-family: 'open sans';
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-align: center;
+  gap: 10%;
+  margin-bottom: 15rem;
+  padding: 0 2rem;
+  display: inline-block; }
+  .about-section__company {
+    width: 40rem;
+    float: left; }
+  .about-section__getting-started {
+    width: 40rem;
+    float: right; }
