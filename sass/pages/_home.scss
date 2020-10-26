@@ -22,14 +22,17 @@
 }
 
 .about-section{
+    width: 100%;
     font-family: 'open sans';
     font-weight: 600;
     font-size: 1.6rem;
     text-align: center;
-    gap: 10%;
+    gap: 5%;
     margin-bottom: 15rem;
     padding: 0 2rem;
-    display: inline-block;
+    text-align: center;
+    line-height: 2rem;
+    letter-spacing: 3px;
 
     &__company {
         width: 40rem;
