@@ -9,7 +9,7 @@
         position: absolute;
         height: 80rem;
         width: 100%;
-        background-image: url(/images/bg.jpg);
+        background-image: url(../images/bg.jpg);
         filter: brightness(30%);
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -17,6 +17,7 @@
         z-index: -10;
 
         clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 100%, 0% 80%);
+        -moz-clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 100%, 0% 80%);
     }
 
 }
